@@ -1,0 +1,15 @@
+<h1>Add a new rental</h1>
+
+<form>
+  <label>Owner</label>
+  {{input type="text" placeholder="Owner" class="detail owner" value=caption}}
+  <br><label>Type</label>
+  {{input type="text" placeholder="Type" class="detail type" value=content}}
+  <br><label>Location</label>
+  {{input type="text" placeholder="Location" class="detail location" value=location}}
+  <br><label>Number of Bedrooms</label>
+  {{input type="text" placeholder="Bedrooms" class="detail location" value=location}}
+  <br><input type="submit" value="Submit New Rental" {{action 'addNewRental'}}>
+</form>
+
+{{outlet}}
